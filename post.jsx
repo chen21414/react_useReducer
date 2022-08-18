@@ -16,7 +16,7 @@ const handleFetch = () => {
   })
   .then((data)=>{
     //{type:"FETCH_SUCCESS", payload: data}
-    dispatch({type:ACTION_TYPES.FETCH_SUCCESS, patload:data})
+    dispatch({type:ACTION_TYPES.FETCH_SUCCESS, payload:data})
   })
   .catch((err) => {
     dispatch({type:ACTION_TYPES.FETCH_ERROR})
